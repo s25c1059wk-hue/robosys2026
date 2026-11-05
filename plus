@@ -1,11 +1,9 @@
 cd ~/robosys2026
-
-# mainブランチにいることを確認（devにいる場合は git switch main）
 git switch main
 
-# 冒頭にSPDXタグを追加したコードで上書き
-cat << 'EOF' > plus_stdin
-#!/usr/bin/python3
+# plus のシバンを #!/usr/bin/env python3 に変更して更新
+cat << 'EOF' > plus
+#!/usr/bin/env python3
 # SPDX-FileCopyrightText: 2026 Kento Someya
 # SPDX-License-Identifier: BSD-3-Clause
 import sys
@@ -23,6 +21,5 @@ for line in sys.stdin:
 print(x)
 EOF
 
-# 実行権限を保持
-chmod +x plus_stdin
+chmod +x plus
 
