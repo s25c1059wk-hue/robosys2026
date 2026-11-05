@@ -1,8 +1,3 @@
-cd ~/robosys2026
-git switch main
-
-# plus のシバンを #!/usr/bin/env python3 に変更して更新
-cat << 'EOF' > plus
 #!/usr/bin/env python3
 # SPDX-FileCopyrightText: 2026 Kento Someya
 # SPDX-License-Identifier: BSD-3-Clause
@@ -19,7 +14,3 @@ for line in sys.stdin:
     x += tonum(line.rstrip())
 
 print(x)
-EOF
-
-chmod +x plus
-
