@@ -1,8 +1,6 @@
 #!/usr/bin/python3
+# SPDX-FileCopyrightText: 2026 Kento Someya
+
+
 import sys
-
-x = 0.0
-for line in sys.stdin:
-    x += float(line)
-
-print(x)
+・・・
